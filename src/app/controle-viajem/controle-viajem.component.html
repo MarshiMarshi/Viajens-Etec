@@ -1,0 +1,35 @@
+<div class="minhasViajens">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Minhas Viajens</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <div class="minhasViajens_content">
+    <div class="minhasViajens_List">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Destino</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Data de Chegada</th>
+            <th scope="col">Data de Saída</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let viajem of viajemArray">
+            <th scope="row">{{viajem.Destino}}</th>
+            <td>{{viajem.Tipo}}</td>
+            <td>{{viajem.DataChegada}}</td>
+            <td>{{viajem.DataSaida}}</td>
+            <td><button [routerLink]="['/detalhes', viajem.Id]" class="table_button button_gray">Detalhes</button></td>
+            <td><button [routerLink]="['/exclusao/', viajem.Id]" class="table_button button_yellow">Excluir</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

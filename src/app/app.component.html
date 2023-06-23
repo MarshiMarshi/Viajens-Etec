@@ -1,0 +1,20 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand">Controle da Viajem</a>
+  <form class="form-inline">
+    <a routerLink="/cadastro" class="btn btn-outline-success my-2 my-sm-0">Nova Viajem</a>
+  </form>
+</nav>
+
+<div class="telas_caontainer">
+  <ng-container *ngIf="!router.url.includes('/exclusao'); else exclusaoComponent">
+    <div class="telas">
+      <router-outlet></router-outlet>
+    </div>
+  </ng-container>
+  <ng-template #exclusaoComponent>
+    <div class="telaExclusao">
+      <router-outlet></router-outlet>
+    </div>
+  </ng-template>
+</div>
+

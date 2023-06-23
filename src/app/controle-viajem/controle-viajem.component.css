@@ -1,0 +1,42 @@
+.navbar {
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+  border-bottom: 2px solid gray;
+}
+
+.minhasViajens {
+  padding-bottom: 2%;
+  border: 2px solid gray;
+  border-radius: 25px;
+}
+
+.minhasViajens_content {
+  height: 100%;
+  width: 100%;
+  padding-top: 2%;
+}
+
+.minhasViajens_List {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid gray;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.table_button {
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+}
+
+.button_gray {
+  background-color: dimgrey;
+  color: white;
+}
+
+.button_yellow {
+  background-color: gold;
+  color: black;
+}

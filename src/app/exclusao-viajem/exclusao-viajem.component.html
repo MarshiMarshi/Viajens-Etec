@@ -1,0 +1,42 @@
+<div class="alert alert-warning" role="alert">
+  Tem certeza que deseja excluir a viajem abaixo?
+</div>
+<div class="exclusaoViajem">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Excluir Viajem</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <div class="exclusaoViajem_content">
+    <div class="exclusaoViajem_list">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Destino</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Data de Chegada</th>
+            <th scope="col">Data de Saída</th>
+            <th scope="col">Orçamento</th>
+            <th scope="col">Qtde. Pessoas</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">{{viajem[receivedId].Destino}}</th>
+            <td>{{viajem[receivedId].Tipo}}</td>
+            <td>{{viajem[receivedId].DataChegada}}</td>
+            <td>{{viajem[receivedId].DataSaida}}</td>
+            <td>R${{viajem[receivedId].Orcamento}}</td>
+            <td>{{viajem[receivedId].QuantidadePessoas}}</td>
+            <td><button routerLink="/controle" class="table_button button_blue">Voltar</button></td>
+            <td><button class="table_button button_red">Confirmar</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
